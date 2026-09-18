@@ -14,7 +14,7 @@ type Species = {
 export default function DisplaySpeciesDialog({ species }: { species: Species }) {
   return (
     <SpeciesDialog
-      trigger={<Button variant="secondary">View Species</Button>}
+      trigger={<Button className="mt-3 w-full">Learn More</Button>}
       title={species.scientific_name}
       description={species.common_name ?? undefined}
     >
