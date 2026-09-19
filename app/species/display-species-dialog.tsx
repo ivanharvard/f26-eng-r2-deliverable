@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button";
 import SpeciesDialog from "./species-dialog";
 
-type Species = {
+interface Species {
     scientific_name: string;
     common_name: string | null;
     total_population: number | null;

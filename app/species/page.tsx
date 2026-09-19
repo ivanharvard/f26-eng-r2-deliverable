@@ -7,7 +7,7 @@ import SpeciesCard from "./species-card";
 import { Button } from "@/components/ui/button";
 import Link from "next/dist/client/link";
 
-type SpeciesListProps = {
+interface SpeciesListProps {
   searchParams: Promise<{
     view?: string;
   }>;

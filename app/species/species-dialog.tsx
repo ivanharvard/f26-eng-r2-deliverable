@@ -10,14 +10,14 @@ import {
 } from "@/components/ui/dialog";
 import type { ReactNode } from "react";
 
-type SpeciesDialogProps = {
+interface SpeciesDialogProps {
     trigger: ReactNode;
     title: string;
     description?: string;
     children: ReactNode;
     open?: boolean;
     onOpenChange?: (open: boolean) => void;
-};
+}
 
 // A generic dialog component that can be reused to display information or forms related to a (new) species.
 export default function SpeciesDialog({
