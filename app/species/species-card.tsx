@@ -10,14 +10,36 @@ on the client-side to correctly match component state and props should the order
 React server components don't track state between rerenders, so leaving the uniquely identified components (e.g. SpeciesCard)
 can cause errors with matching props and state in child components if the list order changes.
 */
+import { Button } from "@/components/ui/button";
 import type { Database } from "@/lib/schema";
+import { Pencil } from "lucide-react";
 import Image from "next/image";
 import DisplaySpeciesDialog from "./display-species-dialog";
 type Species = Database["public"]["Tables"]["species"]["Row"];
 
-export default function SpeciesCard({ species }: { species: Species }) {
+export default function SpeciesCard({
+  species,
+  currentUserId
+}: {
+  species: Species;
+  currentUserId: string;
+}) {
+  const isOwner = species.author === currentUserId;
+
   return (
-    <div className="m-4 w-72 min-w-72 flex-none rounded border-2 p-3 shadow">
+    <div className="relative m-4 w-72 min-w-72 flex-none rounded border-2 p-3 shadow">
+      {isOwner && (
+        <div className="absolute right-3 top-3 z-10 flex items-center gap-2">
+          <Button
+            size="sm"
+            variant="secondary"
+            className="h-8 w-8 rounded-full p-0"
+            aria-label="Edit species"
+          >
+            <Pencil className="h-4 w-4" />
+          </Button>
+        </div>
+      )}
       {species.image && (
         <div className="relative h-40 w-full">
           <Image src={species.image} alt={species.scientific_name} fill style={{ objectFit: "cover" }} />

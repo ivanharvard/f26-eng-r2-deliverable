@@ -40,7 +40,7 @@ export default async function SpeciesList({
 
   // Only retrieve the signed-in user's species when "My Species" is selected
   if (showingMySpecies) {
-    speciesQuery = speciesQuery.eq("user_id", sessionId);
+    speciesQuery = speciesQuery.eq("author", sessionId);
   }
 
   const { data: species } = await speciesQuery;
@@ -70,7 +70,13 @@ export default async function SpeciesList({
       </div>
       {/* End species filter */}
       <div className="flex flex-wrap justify-center">
-        {species?.map((species) => <SpeciesCard key={species.id} species={species} />)}
+        {species?.map((species) => (
+          <SpeciesCard 
+            key={species.id} 
+            species={species} 
+            currentUserId={sessionId} 
+          />
+        ))}
       </div>
     </>
   );
