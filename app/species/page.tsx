@@ -4,8 +4,18 @@ import { createServerSupabaseClient } from "@/lib/server-utils";
 import { redirect } from "next/navigation";
 import AddSpeciesDialog from "./add-species-dialog";
 import SpeciesCard from "./species-card";
+import { Button } from "@/components/ui/button";
+import Link from "next/dist/client/link";
 
-export default async function SpeciesList() {
+type SpeciesListProps = {
+  searchParams: Promise<{
+    view?: string;
+  }>;
+}
+
+export default async function SpeciesList({ 
+  searchParams,
+}: SpeciesListProps) {
   // Create supabase server component client and obtain user session from stored cookie
   const supabase = createServerSupabaseClient();
   const {
@@ -20,7 +30,20 @@ export default async function SpeciesList() {
   // Obtain the ID of the currently signed-in user
   const sessionId = session.user.id;
 
-  const { data: species } = await supabase.from("species").select("*").order("id", { ascending: false });
+  const { view } = await searchParams;
+  const showingMySpecies = view === "mine";
+  
+  let speciesQuery = supabase
+    .from("species")
+    .select("*")
+    .order("id", { ascending: false });
+
+  // Only retrieve the signed-in user's species when "My Species" is selected
+  if (showingMySpecies) {
+    speciesQuery = speciesQuery.eq("user_id", sessionId);
+  }
+
+  const { data: species } = await speciesQuery;
 
   return (
     <>
@@ -29,6 +52,23 @@ export default async function SpeciesList() {
         <AddSpeciesDialog userId={sessionId} />
       </div>
       <Separator className="my-4" />
+      {/* Species filter */}
+      <div className="mb-6 flex gap-2">
+        <Button
+          asChild
+          variant={!showingMySpecies ? "default" : "secondary"}
+        >
+          <Link href="/species">All Species</Link>
+        </Button>
+
+        <Button
+          asChild
+          variant={showingMySpecies ? "default" : "secondary"}
+        >
+          <Link href="/species?view=mine">My Species</Link>
+        </Button>
+      </div>
+      {/* End species filter */}
       <div className="flex flex-wrap justify-center">
         {species?.map((species) => <SpeciesCard key={species.id} species={species} />)}
       </div>
