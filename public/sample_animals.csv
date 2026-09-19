@@ -14,38 +14,29 @@ Axolotl,0.8,carnivore
 Baird's Tapir,48.0,herbivore
 Bald Eagle,120.0,carnivore
 Banded Palm Civet,16.0,omnivore
-,21.0,carnivore
 Bearded Dragon,52.0,omnivore
 Bengal Fox,40.0,omnivore
 Bengal Tiger,65.0,carnivore
 Black Rhinoceros,56.0,herbivore
-Blobfish,,carnivore
-Blobfish,,carnivore
 Blue Jay,32.0,omnivore
-Blue Morpho Butterfly,,herbivore
-Blue-Ringed Octopus,,carnivore
 Bonobo,50.0,omnivore
 Bornean Orangutan,52.0,omnivore
 Bottlenose Dolphin,37.0,carnivore
 Boxer Dog,64.0,omnivore
-Brazilian Wandering Spider,,carnivore
 Brown Bear,48.0,omnivore
 Burmese Python,2.0,carnivore
 Capybara,32.5,herbivore
 Cheetah,112.0,carnivore
 Chimpanzee,40.0,omnivore
-Chinese Giant Salamander,,carnivore
 Clownfish,8.0,omnivore
 Coelacanth,1.6,carnivore
 Common Dolphin,60.0,carnivore
-Common Snapping Turtle,,omnivore
 Coquerel's Sifaka,37.5,herbivore
 Dalmatian Dog,42.5,omnivore
 Dhole,56.0,carnivore
 Dingo,56.0,carnivore
 Dugong,12.5,herbivore
 Eastern Gorilla,40.0,herbivore
-Electric Eel,,carnivore
 Emperor Penguin,2.25,carnivore
 Emperor Tamarin,32.0,omnivore
 European Hedgehog,5.0,omnivore
@@ -55,7 +46,6 @@ Flying Fox,45.0,herbivore
 Fossa,46.5,carnivore
 GalÃ¡pagos Penguin,29.5,carnivore
 Galápagos Tortoise,0.4,herbivore
-Galliformes,,omnivore
 Gaur,35.0,herbivore
 Gerenuk,55.0,herbivore
 Gharial,32.0,carnivore
@@ -63,7 +53,6 @@ Giant Pacific Octopus,24.0,carnivore
 Giant Panda,32.0,herbivore
 Gila Monster,1.5,carnivore
 Goblin Shark,2.3,carnivore
-Goblin Shark,,carnivore
 Golden Lion Tamarin,10.5,omnivore
 Great White Shark,56.0,carnivore
 Great White Shark,56.0,carnivore
@@ -71,7 +60,6 @@ Green Anaconda,20.0,carnivore
 Green Sea Turtle,2.4000000000000004,herbivore
 Green Sea Turtle,35.0,herbivore
 Grevy's Zebra,64.0,herbivore
-Hagfish,,carnivore
 Harp Seal,20.5,carnivore
 Harpy Eagle,50.0,carnivore
 Hippopotamus,25.0,herbivore
@@ -84,26 +72,19 @@ Kangaroo Rat,16.0,herbivore
 King Cobra,20.0,carnivore
 Kiwi,8.0,omnivore
 Komodo Dragon,20.0,carnivore
-Leafy Sea Dragon,,carnivore
 Lemur,26.5,omnivore
 Lemur,29.0,herbivore
 Lyrebird,0.025,omnivore
-Lyrebird,,omnivore
-Malayan Krait,,carnivore
 Manatee,8.0,herbivore
-,30.0,omnivore
 Maned Wolf,56.0,omnivore
 Mantis Shrimp,40.0,carnivore
 Markhor,52.0,herbivore
-Monitor Lizard,,carnivore
 Mountain Gorilla,40.0,herbivore
 Narwhal,45.0,carnivore
-Nudibranch,,carnivore
 Okapi,56.0,herbivore
 Okapi,58.0,herbivore
 Orangutan,9.0,omnivore
 Patagonian Mara,30.0,herbivore
-,72.0,carnivore
 Polar Bear,40.0,carnivore
 Praying Mantis,0.6,carnivore
 Proboscis Monkey,28.0,herbivore
@@ -121,7 +102,6 @@ Shoebill,15.0,carnivore
 Shortfin Mako Shark,45.0,carnivore
 Siberian Husky,57.5,carnivore
 Sloth,0.135,herbivore
-Slow Loris,,omnivore
 Snow Leopard,50.0,carnivore
 Snowy Owl,80.0,carnivore
 Spectacled Bear,45.0,omnivore
@@ -131,26 +111,18 @@ Squirrel Monkey,30.0,omnivore
 Sumatran Orangutan,35.0,omnivore
 Sumatran Rhino,40.0,herbivore
 Sumatran Rhinoceros,52.0,herbivore
-,24.0,carnivore
 Sun Bear,44.0,omnivore
 Tapir,48.0,herbivore
 Tasmanian Tiger,56.0,carnivore
-Termite,,herbivore
 Three-Toed Sloth,20.0,herbivore
 Tibetan Mastiff,45.0,omnivore
 Tiger,28.0,carnivore
 Titanoboa,27.0,carnivore
 Toco Toucan,35.5,omnivore
 Tree Kangaroo,30.0,herbivore
-Tsetse Fly,,carnivore
 Tufted Puffin,17.0,carnivore
 Uakari,20.0,omnivore
 Vampire Bat,32.0,carnivore
-Vaquita,,carnivore
-Vulture,,carnivore
-,40.0,carnivore
-,20.0,omnivore
-,40.0,herbivore
 Western Gorilla,40.0,herbivore
 Western Lowland Gorilla,40.0,herbivore
 White Rhinoceros,45.0,herbivore
@@ -159,9 +131,7 @@ Wild Boar,20.0,omnivore
 Wildebeest,47.0,herbivore
 Wolf,45.0,carnivore
 Wombat,20.0,herbivore
-,,herbivore
 Yak,24.0,herbivore
 Yellow-Eyed Penguin,25.0,carnivore
-Yeti Crab,,omnivore
 Zebra,25.0,herbivore
 Zebra Shark,20.0,carnivore
